@@ -3,3 +3,16 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
+BlogPost:
+  extensions:
+    - BlogPostExtension
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'bootstrap'
+    - '$default'
+SilverStripe\Assets\Flysystem\AssetAdapter:
+  file_permissions:
+    'file':
+      'public': '0644'
+      'private': '0600'
