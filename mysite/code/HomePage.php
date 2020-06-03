@@ -29,5 +29,10 @@ use SilverStripe\Forms\GridField\GridField;
             
             return $fields;
         }
+
+        public function Resources(){
+        	$resources = Resource::get();
+        	return $resources;
+        }
     }
 }
