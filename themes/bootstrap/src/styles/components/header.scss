@@ -1,0 +1,9 @@
+.header {
+	background-color: $white;
+}
+.navbar-light .navbar-text a {
+	color: white;
+	&:focus, &:hover {
+		color: white;
+	}
+}

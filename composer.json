@@ -24,7 +24,7 @@
         "resources-dir": "_resources",
         "expose": [
             "themes/bootstrap/dist",
-	    "themes/bootstrap/src"
+            "themes/bootstrap/src"
         ],
         "project-files-installed": [
             "app/.htaccess",

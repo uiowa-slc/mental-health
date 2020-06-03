@@ -17,7 +17,7 @@
 
     <% include Favicons %>
 
-    $TypeKitScript
+    {$GoogleFonts}
     <link rel="stylesheet" href="{$ThemeDir}/dist/styles/main.css">
   </head>
   <body class="{$ClassName}">

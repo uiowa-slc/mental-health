@@ -3,8 +3,5 @@ Name: mywebfonts
 ---
 gorriecoe\Webfonts\View\Webfonts:
   GoogleFonts:
-    - 'Lora'
-    - 'Lora:italic'
-    - 'Roboto'
-    - 'Roboto:bold'
-    - 'Roboto:italic'
+    - 'Zilla Slab: semi-bold,bold'
+    - 'Roboto:regular,italic,bold'

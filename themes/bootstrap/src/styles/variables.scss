@@ -5,47 +5,78 @@
 
 // Color system
 $gold: #ffcd00;
-$highlight: $gold;
+$blue: #4571b6;
+$teal: #88d8d2;
+$orange: #ff8a5c;
+$green: #33aa6d;
+$yellow: $gold;
+$highlight: $blue;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #151515;
+$black:    #000;
+
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$light:         $gray-100;
+$dark:          $gray-900;
+$body-bg:       $gray-100;
 
 
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1300px
+  xl: 1200px
 );
 
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1300px
+  xl: 1140px
 );
+
+// Grid gutter
+$grid-gutter-width:           40px;
 
 
 // Fonts
 $enable-responsive-font-sizes: true;
-$font-family-base: "proxima-nova",sans-serif;
-$headings-font-family: "proxima-nova-alt-condensed",sans-serif;
-$font-size-base: 1.1rem;
+$font-family-base: Roboto, sans-serif;
+$headings-font-family: 'Zilla Slab', serif;
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
 $headings-font-weight: 600;
 
+$display1-size: 6rem ;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
 
-// Jumbotron
-$jumbotron-padding: 6rem;
-$jumbotron-color: #333;
-$jumbotron-bg: #f6f9fc;
+$display1-weight:   600;
+$display2-weight:   600;
+$display3-weight:   600;
+$display4-weight:   600;
 
 // Spacing
 $spacer: 1rem;
@@ -54,4 +85,9 @@ $spacers: (
   7: ($spacer * 6),
   8: ($spacer * 9),
   9: ($spacer * 12)
-)
+);
+
+// Border
+$border-radius:     .20rem;
+$border-radius-lg:  .25rem;
+$border-radius-sm:  .15rem;

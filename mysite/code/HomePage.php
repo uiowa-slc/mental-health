@@ -1,48 +1,33 @@
 <?php
 
+namespace {
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
-use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
-use SilverStripe\Forms\GridField\GridFieldAddNewButton;
+use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 use SilverStripe\Forms\GridField\GridField;
-use  UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
-class HomePage extends Page {
 
-	private static $db = array(
-	);
+    class HomePage extends Page
+    {
+        private static $db = [
 
-	private static $has_one = array(
-	);
+        ];
 
-	private static $icon_class = 'font-icon-p-home';
+        private static $has_one = [];
 
-	public function getCMSFields() {
-		$f = parent::getCMSFields();
+        private static $icon_class = 'font-icon-p-home';
 
-		$f->removeByName("Content");
-		$f->removeByName("BackgroundImage");
-		$f->removeByName("InheritSidebarItems");
-		$f->removeByName("SidebarLabel");
-		$f->removeByName("SidebarItem");
+        public function getCMSFields()
+        {
+            $fields = parent::getCMSFields();
 
-		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
-		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 
-		$homePageAnnouncementGridFieldConfig = GridFieldConfig_RecordEditor::create();
-		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
-
-		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldAddNewMultiClass());
-		$homePageAnnouncementGridFieldConfig->removeComponentsByType(GridFieldAddNewButton::class);
-
-		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that come before the latest articles", HomePageAnnouncement::get(), $gridFieldConfig);
-		$f->addFieldToTab("Root.Main", $homePageAnnouncementGridField);
-
-		return $f;
-	}
-	public function HomePageAnnouncements() {
-		$features = HomePageAnnouncement::get();
-
-		return $features;
-
-	}
-	
+            $conf = GridFieldConfig_RecordEditor::create();
+            $conf->addComponent(new GridFieldSortableRows('SortOrder'));
+            $fields->addFieldToTab('Root.Resources', new GridField('Resources', 'Resources', Resource::get(), $conf));
+            
+            return $fields;
+        }
+    }
 }
