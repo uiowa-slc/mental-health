@@ -1,4 +1,4 @@
-<!-- <% include Header %> -->
+
 <div class="jumbotron jumbotron-fluid bg-dark pb-lg-9">
     <div class="container-xl position-relative">
         <h1 class="display-4 text-light">$Title</h1>
@@ -8,10 +8,10 @@
 <main class="container-xl">
 	<div class="row">
 		<div class="col">
-            <div class="row row-cols-2 mt-lg-n9">
+            <div class="row mt-lg-n9">
                 <% if $Resources %>
                     <% loop $Resources %>
-                        <div class="col">
+                        <div class="col-md-6">
                             <% include ResourceCard %>
                         </div>
                      <% end_loop %>
