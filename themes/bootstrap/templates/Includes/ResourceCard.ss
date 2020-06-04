@@ -1,7 +1,9 @@
 <div class="card mb-5 rounded-sm">
     <h4 class="card-header bg-warning">$Title</h4>
     <div class="card-body">
-        <img src="https://via.placeholder.com/150" alt="" class="float-right ml-3 mb-3">
+        <% if $Logo %>
+            <img src="$Logo.ScaleWidth(175).URL" alt="$Title" class="float-right ml-3 mb-3">
+        <% end_if %>
         $Content
         <h5>Services</h5>
         $Services      
@@ -20,17 +22,17 @@
         <% if $Twitter || $Facebook || $Instagram %>
             <li class="list-group-item">Social: 
                  <% if $Twitter %>
-                    <a href="$Twitter" target="_blank" class="text-dark">
+                    <a href="$Twitter" class="text-dark">
                         <i class="fab fa-twitter-square fa-2x pr-2 align-middle"></i>
                     </a>
                 <% end_if %>
                 <% if $Facebook %>
-                    <a href="$Facebook" target="_blank" class="text-dark">
+                    <a href="$Facebook" class="text-dark">
                         <i class="fab fa-facebook-square fa-2x pr-2 align-middle"></i>
                     </a>
                 <% end_if %>
                  <% if $Instagram %>
-                    <a href="$Instagram" target="_blank" class="text-dark">
+                    <a href="$Instagram" class="text-dark">
                         <i class="fab fa-instagram-square fa-2x pr-2 align-middle"></i>
                     </a>
                 <% end_if %>
