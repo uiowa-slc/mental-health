@@ -2,7 +2,7 @@
     <h4 class="card-header bg-warning">$Title</h4>
     <div class="card-body">
         <% if $Logo %>
-            <img src="$Logo.ScaleWidth(175).URL" alt="$Title" class="float-right ml-3 mb-3">
+            <img src="$Logo.ScaleWidth(350).URL" alt="$Title" class="float-right ml-3 mb-3 resource-logo">
         <% end_if %>
         $Content
         <h5>Services</h5>
