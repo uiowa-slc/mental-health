@@ -19,6 +19,9 @@
 
     {$GoogleFonts}
     <link rel="stylesheet" href="{$ThemeDir}/dist/styles/main.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/49191f9021.js" crossorigin="anonymous"></script>
   </head>
   <body class="{$ClassName}">
   <% include UiowaBar %>

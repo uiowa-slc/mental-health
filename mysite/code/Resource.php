@@ -16,6 +16,9 @@ class Resource extends DataObject
         'PhoneNumber' => 'Text',
         'EmailAddress' => 'Text',
         'Website' => 'Text',
+        'Twitter' => 'Text',
+        'Facebook' => 'Text',
+        'Instagram' => 'Text',
     ];
     private static $has_one = array(
 
@@ -40,6 +43,10 @@ class Resource extends DataObject
             $fields->addFieldToTab('Root.Main', new TextField('PhoneNumber', 'Main Phone Number'));
             $fields->addFieldToTab('Root.Main', new TextField('EmailAddress', 'Email Address'));
             $fields->addFieldToTab('Root.Main', new TextField('Website', 'Website'));
+
+            $fields->addFieldToTab('Root.Main', new TextField('Twitter', 'Twitter URL'));
+            $fields->addFieldToTab('Root.Main', new TextField('Facebook', 'Facebook URL'));
+            $fields->addFieldToTab('Root.Main', new TextField('Instagram', 'Instagram URL'));
 
             $fields->addFieldToTab('Root.Main', new HTMLEditorField('Content'));
             $fields->addFieldToTab('Root.Main', new HTMLEditorField('Services'));
