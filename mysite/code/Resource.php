@@ -13,6 +13,7 @@ class Resource extends DataObject
         'SortOrder' => 'Int',
         'Content' => 'HTMLText',
         'Services' => 'HTMLText',
+        'PopulationServed' => 'Text',
         'PhoneNumber' => 'Text',
         'EmailAddress' => 'Text',
         'Website' => 'Text',
@@ -40,6 +41,7 @@ class Resource extends DataObject
             $fields->addFieldToTab('Root.Main', new TextField('Title'));
             $fields->addFieldToTab('Root.Main', new UploadField('Logo', 'Upload Logo'));
 
+            $fields->addFieldToTab('Root.Main', new TextField('PopulationServed', 'Population Served'));
             $fields->addFieldToTab('Root.Main', new TextField('PhoneNumber', 'Main Phone Number'));
             $fields->addFieldToTab('Root.Main', new TextField('EmailAddress', 'Email Address'));
             $fields->addFieldToTab('Root.Main', new TextField('Website', 'Website'));

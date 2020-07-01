@@ -1,5 +1,7 @@
 <div class="card mb-5 rounded-sm">
-    <h4 class="card-header bg-warning">$Title</h4>
+    <h4 class="card-header bg-warning">
+        $Title <% if $PopulationServed %><span class="card-header__pop">Populations Served: $PopulationServed</span><% end_if %>
+    </h4>
     <div class="card-body">
         <% if $Logo %>
             <img src="$Logo.ScaleWidth(350).URL" alt="$Title" class="float-right ml-3 mb-3 resource-logo">
