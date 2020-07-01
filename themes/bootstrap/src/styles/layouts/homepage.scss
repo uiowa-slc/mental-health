@@ -1,24 +1,47 @@
-#BetterNavigator {display: none;}
+// #BetterNavigator {display: none;}
 
-.jumbotron {
+body {
+    background-color: #151515;
     position: relative;
     &:before {
         background-image: url(../images/IOWA-BrainRockPattern-Gold.png);
         background-position: center top;
         background-repeat: repeat;
         content: '';
-        opacity: .1;
+        opacity: .09;
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
     }
-    @include media-breakpoint-up(lg) {
-        -webkit-clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
-        clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
-    }
 }
+// .jumbotron {
+//     position: relative;
+//     &:before {
+//         background-image: url(../images/IOWA-BrainRockPattern-Gold.png);
+//         background-position: center top;
+//         background-repeat: repeat;
+//         content: '';
+//         opacity: .1;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//     }
+//     @include media-breakpoint-up(lg) {
+//         -webkit-clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
+//         clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
+//     }
+// }
 .resource-logo {
     width: 35%;
+}
+.card-header__pop {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: $font-family-base;
+    margin-top: 2px;
 }
