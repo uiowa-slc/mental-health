@@ -1,23 +1,33 @@
 <% include Header %>
 
+<!-- Photo Image Feature -->
+<% if $Photo %>
+    <% include FeaturedImage %>
+<% end_if %>
 
-<div class="container">
-	<div class="row">
-		<div class=" col-sm px-lg-0 content-container" role="main">
-			<article>
-				<h1>$Title</h1>
+<main class="container-xl my-3 my-lg-5" id="content">
+    <div class="row">
+        <div class="col">
+            <% if not $Photo %>
+                <div class="content-header mb-4">
+                    $Breadcrumbs
+                    <h1>$Title</h1>
+                </div>
+            <% end_if %>
+        </div>
+    </div>
+    <div class="row">
+        <% if $Menu(2) %>
+			<% include SideBar %>
+		<% end_if %>
+        <div class="content-container <% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
+            <article>
 				<div class="content">$Content</div>
-				<%--<% include MagnificExample %> -- %>
-				<%-- <% include SlideshowExample %> --%>
-				<%-- <% include ContentExample %> --%>
 			</article>
 			$Form
 			$PageComments
 
 		</div>
-		<% if $Menu(2) || $SideBarView.Widgets %>
-			<% include SideBar %>
-		<% end_if %>
 	</div>
-</div>
+</main>
 

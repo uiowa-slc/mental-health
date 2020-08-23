@@ -3,6 +3,7 @@
 -------------------------------------------*/
 .footer {
     font-size: $font-size-sm;
+    position: relative;
 	&__logo {
         display:block;
 		max-width: 300px;

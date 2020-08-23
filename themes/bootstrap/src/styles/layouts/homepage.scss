@@ -1,7 +1,5 @@
-// #BetterNavigator {display: none;}
-
-body {
-    background-color: #151515;
+.HomePage {
+    background-color: $gray-900;
     position: relative;
     &:before {
         background-image: url(../images/IOWA-BrainRockPattern-Gold.png);
@@ -16,25 +14,7 @@ body {
         left: 0;
     }
 }
-// .jumbotron {
-//     position: relative;
-//     &:before {
-//         background-image: url(../images/IOWA-BrainRockPattern-Gold.png);
-//         background-position: center top;
-//         background-repeat: repeat;
-//         content: '';
-//         opacity: .1;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         bottom: 0;
-//         left: 0;
-//     }
-//     @include media-breakpoint-up(lg) {
-//         -webkit-clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
-//         clip-path: polygon(0% 0%,100% 0%,100% calc(100% - 7em),0% 100%);
-//     }
-// }
+
 .resource-logo {
     width: 35%;
 }
@@ -44,4 +24,12 @@ body {
     font-weight: normal;
     font-family: $font-family-base;
     margin-top: 2px;
+}
+.social-link {
+    text-decoration: none;
+    color: $black;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $gold;
+    }
 }

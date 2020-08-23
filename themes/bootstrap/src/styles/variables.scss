@@ -29,7 +29,7 @@ $primary:       $blue;
 $secondary:     $gray-600;
 $light:         $gray-100;
 $dark:          $gray-900;
-$body-bg:       $gray-100;
+$body-bg:       $white;
 
 
 // Grid breakpoints
@@ -41,7 +41,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1300px
 );
 
 
@@ -52,7 +52,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1260px
 );
 
 // Grid gutter
@@ -62,11 +62,18 @@ $grid-gutter-width:           40px;
 // Fonts
 $enable-responsive-font-sizes: true;
 $font-family-base: Roboto, sans-serif;
-$headings-font-family: 'Zilla Slab', serif;
-$font-size-base: 1rem;
+$headings-font-family: 'Roboto Condensed', sans-serif;
+$font-size-base: 1.2rem;
 $font-size-lg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * .875;
-$headings-font-weight: 600;
+$headings-font-weight: 700;
+
+$h1-font-size:  $font-size-base * 3 !default;
+$h2-font-size:  $font-size-base * 2 !default;
+$h3-font-size:  $font-size-base * 1.75 !default;
+$h4-font-size:  $font-size-base * 1.5 !default;
+$h5-font-size:  $font-size-base * 1.25 !default;
+$h6-font-size:  $font-size-base !default;
 
 $display1-size: 6rem ;
 $display2-size: 5.5rem;
@@ -91,3 +98,19 @@ $spacers: (
 $border-radius:     .20rem;
 $border-radius-lg:  .25rem;
 $border-radius-sm:  .15rem;
+
+// Breadcrumbs
+$breadcrumb-font-size:              13px;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding:           .5rem;
+$breadcrumb-margin-bottom:          0;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          $gold;
+$breadcrumb-active-color:           $black;
+$breadcrumb-divider:                quote("/");
+$breadcrumb-border-radius:          $border-radius;
+
+// Navbar
+$navbar-light-color: rgba($black, .6);
+$navbar-brand-font-size: $font-size-base;

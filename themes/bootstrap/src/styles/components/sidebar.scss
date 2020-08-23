@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------------
+Subnavigation
+--------------------------------------------------------------- */
+.sidebar {
+    background-color: $gray-100;
+    border: 1px solid $gray-200;
+    @include media-breakpoint-up(lg) {
+        background-color: $white;
+        padding: 0;
+    }
+
+    // Links
+    & .navbar-nav .nav-link {
+        color: $gray-700;
+        font-size: $font-size-sm;
+        padding: 8px;
+        &--current {
+            font-weight: bold;
+        }
+        &:hover, &:focus {
+            background-color: $gray-200;
+            text-decoration: underline;
+        }
+        @include media-breakpoint-up(lg) {
+            padding: 14px 20px;
+            &:hover, &:focus {
+                background-color: $gray-100;
+            }
+        }
+    }
+
+    & .navbar-nav .nav-item {
+        border-bottom: 1px solid $gray-300;
+        color: $gray-700;
+
+        // Curent
+        &--current, &--section {
+            background-color: $gray-200;
+            @include media-breakpoint-up(lg) {
+                background-color: $gray-100;
+            }
+        }
+
+        // Section Title
+        &--first .nav-link {
+            @include media-breakpoint-up(lg) {
+                border-top: 4px solid $gold;
+                border-bottom: none;
+                font-size: 15px !important;
+                font-family: $headings-font-family;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: 0 20px;
+                padding: 24px 0;
+                text-transform: uppercase;
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        // Begin Second Level navigation
+        & .nav-item {
+            border-bottom: none;
+            & .nav-link {
+                border-bottom: none;
+                font-size: 14px;
+                padding: 10px 10px 10px 30px;
+                position: relative;
+                &::before {
+                    content: "- ";
+                    position: absolute;
+                    left: 20px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+
+    & .navbar-collapse {
+        @include media-breakpoint-up(lg) {
+            display: block !important;
+        }
+    }
+}
+
+
+
