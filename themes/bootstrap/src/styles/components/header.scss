@@ -1,9 +1,11 @@
+
 .header {
-	background-color: $white;
+    background-color: $gold;
+    position: relative;
+    z-index: 1;
+    & .navbar .nav-link,
+    & .navbar .dropdown-item {
+        font-size: $font-size-sm;
+    }
 }
-.navbar-light .navbar-text a {
-	color: white;
-	&:focus, &:hover {
-		color: white;
-	}
-}
+

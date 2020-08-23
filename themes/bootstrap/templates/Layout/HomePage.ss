@@ -1,27 +1,28 @@
+<% include Header %>
 
-<div class="jumbotron jumbotron-fluid bg-transparent pb-lg-9">
-    <div class="container-xl position-relative">
-        <h1 class="display-4 text-light">$Title</h1>
-        <div class="text-light">$Content</div>
-    </div>
-  </div>
-<main class="container-xl">
-	<div class="row">
-		<div class="col">
-            <div class="row mt-lg-n9">
-                <% if $Resources %>
+<main id="content" class="container-xl">
+
+    <section class="jumbotron jumbotron-fluid bg-transparent pb-lg-9">
+        <h1 class="display-4 text-light">$SiteConfig.Title</h1>
+        <div class="text-light">
+            $Content
+            $Form
+            $PageComments
+        </div>
+    </section>
+
+    <% if $Resources %>
+        <section class="row">
+            <div class="col">
+                <div class="row mt-lg-n9">
                     <% loop $Resources %>
                         <div class="col-md-6">
                             <% include ResourceCard %>
                         </div>
-                     <% end_loop %>
-                <% end_if %>
-            </div>			
-
-			$Form
-			$PageComments
-
-		</div>
-	</div>
+                    <% end_loop %>
+                </div>			
+            </div>
+        </section>
+    <% end_if %>
 </main>
 

@@ -5,6 +5,11 @@ use SilverStripe\View\ArrayData;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\CMS\Controllers\ContentController;
 use SilverStripe\Blog\Model\Blog;
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\LiteralField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\TextareaField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
 
 class Page extends SiteTree {
 
@@ -13,21 +18,19 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
+		"Photo" => Image::class,
 	);
+	
+    private static $owns = array(
+        'Photo'
+    );
+    
+    public function getCMSFields() {
+        $fields = parent::getCMSFields();
 
-	public function BlogPosts(){
+        $fields->addFieldToTab('Root.Main', new UploadField('Photo', 'Upload Photo'), 'Content');
 
-		$blog = Blog::get()->First();
-
-		return $blog->getBlogPosts();
-
+		return $fields;
 	}
-	public function LatestIssue() {
-		$latestIssue = Issue::get()->sort(
-			array('Volume' => 'DESC', 'Number' => 'DESC')
-		)->First();
-		return $latestIssue;
-	}
-
 
 }
