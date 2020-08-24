@@ -22,7 +22,7 @@
 		<% end_if %>
         <div class="content-container <% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
             <article>
-				<div class="content">$Content</div>
+				$Content
 			</article>
 			$Form
 			$PageComments
