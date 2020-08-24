@@ -1,0 +1,8 @@
+.post-summary {
+    &__media {
+        @include media-breakpoint-up(sm) {
+            float:right;
+            width: 30%;
+        }
+    }
+}
