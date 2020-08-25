@@ -20,9 +20,6 @@
         </a>;
     <% end_if %>
 
-    <%t SilverStripe\\Blog\\Model\\Blog.Posted "Posted" %>
-    <a href="$MonthlyArchiveLink">$PublishDate.ago</a>
-
     <% if $Credits %>
         <%t SilverStripe\\Blog\\Model\\Blog.By "by" %>
 
