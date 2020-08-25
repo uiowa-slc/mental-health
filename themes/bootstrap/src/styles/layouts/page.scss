@@ -21,6 +21,11 @@ body {
 h1 {
     font-family:'Zilla Slab', serif;
 }
+blockquote {
+    font-family:'Zilla Slab', serif;
+    border-left: 8px solid $gold;
+    padding: $spacer $spacer * 1.5;
+}
 .content-header {
     border-bottom: 4px solid $gray-200;
 }
