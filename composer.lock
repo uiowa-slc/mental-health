@@ -886,12 +886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project.git",
-                "reference": "4216ba149e22875360ed35d51f61a207aee96feb"
+                "reference": "106d7f2821ad306761ae784ced59c17fa3c9ab2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/4216ba149e22875360ed35d51f61a207aee96feb",
-                "reference": "4216ba149e22875360ed35d51f61a207aee96feb",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/106d7f2821ad306761ae784ced59c17fa3c9ab2e",
+                "reference": "106d7f2821ad306761ae784ced59c17fa3c9ab2e",
                 "shasum": ""
             },
             "require": {
@@ -921,7 +921,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/tree/main",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/issues"
             },
-            "time": "2020-08-28T19:38:24+00:00"
+            "time": "2020-08-31T20:37:07+00:00"
         },
         {
             "name": "md/deploy-helper",
