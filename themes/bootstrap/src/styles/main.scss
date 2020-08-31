@@ -50,15 +50,24 @@
 @import "uiowa-bar";
 
 
+/* bootstrap-project files (footer, remcalc, sidebar, login styles) can be included individually.
+ (located in vendor/md/bootstrap-project/client/styles/)
+--------------------------------------------*/
+@import "mixins/remcalc";
+@import "components/footer";
+@import "components/breadcrumbs";
+// @import "components/sidebar";
+@import "layouts/login";
+
+// @import "bootstrap-project";
+
 /* Components
 --------------------------------------------*/
 @import "components/header";
 @import "components/footer";
 @import "components/sidebar";
-@import "components/header";
-@import "components/footer";
 @import "components/featuredimage";
-@import "components/breadcrumb";
+
 
 /* Layout
 --------------------------------------------*/
