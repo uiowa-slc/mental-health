@@ -9,19 +9,11 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
         <ul class="navbar-nav">
             <% loop $Menu(1) %>
-                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %><% if Children && ClassName != 'ShowHolder' %> dropdown<% end_if %>">
-                    <a class="nav-link<% if Children && ClassName != 'ShowHolder' %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children && ClassName != 'ShowHolder' %> id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %> >$MenuTitle.XML</a>
-
-                    <% if Children && ClassName != 'ShowHolder' %>
-                        <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown$Pos">
-                            <a class="dropdown-item" href="$Link">$MenuTitle</a>
-                            <% loop Children %>
-                                <a class="dropdown-item" href="$Link">$MenuTitle</a>
-                            <% end_loop %>
-                        </div>
-                    <% end_if %>
-
+                <% if $URLSegment != 'home' %>
+                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>">
+                    <a class="nav-link" href="$Link"  >$MenuTitle.XML</a>
                 </li>
+                <% end_if %>
             <% end_loop %>
         </ul>
     </div>
