@@ -95,7 +95,7 @@
                     <% end_if %>
 
                     <% if $UiCalendarLink %>
-                        <a href="$UiCalendarLink" target="_blank" class="btn btn-sm btn-outline-secondary">View on the UI calendar</a>
+                        <a href="$UiCalendarLink" target="_blank" class="btn btn-warning">View on the UI calendar</a>
                     <% end_if %>
                 </div>
 

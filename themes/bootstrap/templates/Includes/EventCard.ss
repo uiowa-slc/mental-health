@@ -19,13 +19,13 @@
         </div>
         <div class="col-md-9">
             <div class="card-body">
-                <h5 class="card-title">
+                <h4 class="card-title">
                     <a href="$Link">$Title</a>
-                </h5>
+                </h4>
                 
                 <!-- Dates -->
                 <% if $Dates %>
-                    <p class="card-text small text-muted">
+                    <p class="card-text">
                         <img src="{$ThemeDir}/dist/images/calendar-bw.png" alt="calendar icon" width="16">
                         <% loop $Dates.Limit(1) %>
                             <% include DateTimesList %>
@@ -37,13 +37,14 @@
 
                 <!-- Venue -->
                 <% if $Venue %>
-                    <p class="card-text small text-muted">
+                    <p class="card-text">
                         <img src="{$ThemeDir}/dist/images/location-bw.png" alt="location icon" width="16">
                         $Venue.Title
                     </p>
                 <% end_if %>
 
-                <p class="card-text">$Content.Summary(30)</p>
+                <%-- <p class="card-text">$Content.Summary(30)</p> --%>
+                <a href="#" class="btn btn-warning d-block d-sm-inline-block">See Details</a>
             </div>
         </div>
     </div>
