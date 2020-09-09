@@ -4,7 +4,7 @@
             <div class="eventimg-overflow">
                 <% if $Image.URL %>
                     <a href="$Link">
-                        <img src="$Image.URL" class="card-img" alt="$Title" loading="lazy">
+                        <img src="$Image.ThumbURL" class="card-img" alt="$Title" loading="lazy">
                     </a>
                 <% else_if $Venue.ImageURL %>
                     <a href="$Link">

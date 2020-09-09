@@ -13,7 +13,7 @@
         <div class="content-container col-lg-12">
             <div class="row">
                 <div class="col-lg-8">
-                    <% if $Image.URL %>
+                    <% if $Image.ThumbURL %>
                         <img src="$Image.URL" class="float-md-left mb-md-3 mr-md-3 w-50 img-thumbnail" alt="$Title">
                     <% end_if %>
 
