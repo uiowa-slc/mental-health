@@ -14,7 +14,7 @@
                     <a class="nav-link<% if Children %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children %> id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %> >$MenuTitle.XML</a>
 
                     <% if Children && ClassName != 'ShowHolder' %>
-                        <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown$Pos">
+                        <div class="dropdown-menu dropdown-menu-right shadow-sm" aria-labelledby="navbarDropdown$Pos">
                             <a class="dropdown-item" href="$Link">$MenuTitle</a>
                             <% loop Children %>
                                 <a class="dropdown-item" href="$Link">$MenuTitle</a>
