@@ -1,0 +1,17 @@
+// adds + - to accordion component
+.accordion .card-header h2 button {
+    text-align: left;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-right: 20px;
+    
+    &:after {
+        content:'-';
+        position: absolute;
+        right: 0;
+    }
+    &.collapsed:after {
+        content:'+';
+    }
+}

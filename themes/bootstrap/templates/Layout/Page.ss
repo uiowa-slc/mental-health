@@ -26,7 +26,8 @@
 			</article>
 			$Form
 			$PageComments
-
+            
+            <% include ChildPages %>
 		</div>
 	</div>
 </main>
