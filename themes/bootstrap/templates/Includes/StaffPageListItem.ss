@@ -37,9 +37,9 @@
 			<% if $Photo %>
 				<div class="stafflist__img">
 					<% if $Parent.PhotoOrientation == "Portrait" %>
-						<img src="$Photo.Fill(234,350).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
+						<img src="$Photo.FocusFill(234,350).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
 					<% else %>
-						<img src="$Photo.Fill(350,234).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
+						<img src="$Photo.FocusFill(350,234).URL" alt="Photograph of $FirstName $LastName" class="card-img-top" loading="lazy" />
 					<% end_if %>
 				</div>
 			<% else %>

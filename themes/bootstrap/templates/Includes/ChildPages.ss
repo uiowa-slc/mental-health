@@ -4,7 +4,7 @@
         <% loop $Children %>
             <div class="card bg-dark text-white">
                 <% if $Photo %>
-                    <img src="$Photo.Fill(400,300).URL" class="card-img img-fluid" alt="$Title" loading="lazy">
+                    <img src="$Photo.FocusFill(400,300).URL" class="card-img img-fluid" alt="$Title" loading="lazy">
                 <% else %>
                     <img src="{$ThemeDir}/dist/images/card-bg.jpg" alt="" loading="lazy">
                 <% end_if %>
