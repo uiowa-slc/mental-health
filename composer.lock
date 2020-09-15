@@ -536,6 +536,73 @@
             "time": "2019-11-02T09:15:47+00:00"
         },
         {
+            "name": "jonom/focuspoint",
+            "version": "3.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonom/silverstripe-focuspoint.git",
+                "reference": "0b80b673706299e7e171fbfde7600bf1b1879432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonom/silverstripe-focuspoint/zipball/0b80b673706299e7e171fbfde7600bf1b1879432",
+                "reference": "0b80b673706299e7e171fbfde7600bf1b1879432",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "^1.4",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client"
+                ],
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JonoM\\FocusPoint\\": "src/",
+                    "JonoM\\FocusPoint\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathon Menz",
+                    "homepage": "http://jonathonmenz.com"
+                }
+            ],
+            "description": "Smarter automatic image cropping for SilverStripe",
+            "keywords": [
+                "crop",
+                "cropping",
+                "focus",
+                "focuspoint",
+                "image",
+                "silverstripe"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/jmnz",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jonom",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-06-12T19:10:48+00:00"
+        },
+        {
             "name": "jonom/silverstripe-betternavigator",
             "version": "5.0.2",
             "source": {
@@ -886,16 +953,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project.git",
-                "reference": "de77d4b97d2f656198a570c6556469ab57006a58"
+                "reference": "d43c0683975a217484da61a3e91e5158a1529980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/de77d4b97d2f656198a570c6556469ab57006a58",
-                "reference": "de77d4b97d2f656198a570c6556469ab57006a58",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/bootstrap-project/zipball/d43c0683975a217484da61a3e91e5158a1529980",
+                "reference": "d43c0683975a217484da61a3e91e5158a1529980",
                 "shasum": ""
             },
             "require": {
                 "gorriecoe/silverstripe-webfonts": "*",
+                "jonom/focuspoint": "*",
                 "jonom/silverstripe-betternavigator": "*",
                 "md/ac-json-events": "3.*",
                 "md/deploy-helper": "*",
@@ -921,7 +989,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/tree/main",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/bootstrap-project/issues"
             },
-            "time": "2020-09-02T16:22:33+00:00"
+            "time": "2020-09-15T15:12:10+00:00"
         },
         {
             "name": "md/deploy-helper",
