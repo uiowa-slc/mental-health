@@ -14,22 +14,3 @@
         left: 0;
     }
 }
-
-.resource-logo {
-    width: 35%;
-}
-.card-header__pop {
-    display: block;
-    font-size: 15px;
-    font-weight: normal;
-    font-family: $font-family-base;
-    margin-top: 2px;
-}
-.social-link {
-    text-decoration: none;
-    color: $black;
-    &:hover, &:focus {
-        text-decoration: none;
-        color: $gold;
-    }
-}

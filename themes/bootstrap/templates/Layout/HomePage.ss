@@ -10,19 +10,6 @@
             $PageComments
         </div>
     </section>
-
-    <% if $Resources %>
-        <section class="row">
-            <div class="col">
-                <div class="row mt-lg-n9">
-                    <% loop $Resources %>
-                        <div class="col-md-6">
-                            <% include ResourceCard %>
-                        </div>
-                    <% end_loop %>
-                </div>			
-            </div>
-        </section>
-    <% end_if %>
+    
 </main>
 

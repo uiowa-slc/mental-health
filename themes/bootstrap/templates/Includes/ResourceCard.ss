@@ -26,19 +26,19 @@
                  <% if $Twitter %>
                     <a href="$Twitter" class="social-link">
                         <i class="fab fa-twitter-square fa-2x pr-2 align-middle" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
+                        <span class="">Twitter</span>
                     </a>
                 <% end_if %>
                 <% if $Facebook %>
                     <a href="$Facebook" class="social-link">
                         <i class="fab fa-facebook-square fa-2x pr-2 align-middle" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
+                        <span class="">Facebook</span>
                     </a>
                 <% end_if %>
                  <% if $Instagram %>
                     <a href="$Instagram" class="social-link">
                         <i class="fab fa-instagram-square fa-2x pr-2 align-middle" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
+                        <span class="">Instagram</span>
                     </a>
                 <% end_if %>
             </li>
