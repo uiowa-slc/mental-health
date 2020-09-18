@@ -9,7 +9,7 @@
     <div class="featuredimage__contentwrap pt-3 pt-md-0">
         <div class="container-xl py-md-3">
             <div class="row">
-                <div class="<% if $Menu(2) %>col-lg-12 <% else %>col-md-10 offset-md-1<% end_if %>">
+                <div class="col-lg-12">
                     $Breadcrumbs
                     <h1>$Title</h1>
                 </div>
