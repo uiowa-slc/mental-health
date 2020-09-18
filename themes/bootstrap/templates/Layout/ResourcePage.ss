@@ -30,7 +30,7 @@
     </div>
     <% if $Resources %>
         <section class="row">
-            <div class="col-md-10 offset-md-1 ">
+            <div class="col-md-12 ">
                 <div class="row">
                     <% loop $Resources %>
                         <div class="col-md-6">
