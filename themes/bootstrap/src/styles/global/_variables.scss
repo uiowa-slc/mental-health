@@ -31,6 +31,9 @@ $light: $gray-100;
 $dark: $gray-900;
 $body-bg: $white;
 
+$theme-colors: ();
+$theme-colors: map-merge(("gold": $gold), $theme-colors);
+
 
 // Grid breakpoints
 //
@@ -113,8 +116,9 @@ $breadcrumb-divider: quote("/");
 $breadcrumb-border-radius: $border-radius;
 
 // Navbar
-$navbar-light-color: rgba($black, .6);
+$navbar-light-color: rgba($black,
+.6);
 $navbar-brand-font-size: $font-size-base;
 
 // Cards
-$card-border-radius:                $border-radius-sm;
+$card-border-radius: $border-radius-sm;
