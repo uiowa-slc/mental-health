@@ -99,9 +99,9 @@ $spacers: (6: ($spacer * 4.5),
 9: ($spacer * 12));
 
 // Border
-$border-radius: .20rem;
-$border-radius-lg: .25rem;
-$border-radius-sm: .15rem;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 // Breadcrumbs
 $breadcrumb-font-size: 13px;
@@ -116,8 +116,7 @@ $breadcrumb-divider: quote("/");
 $breadcrumb-border-radius: $border-radius;
 
 // Navbar
-$navbar-light-color: rgba($black,
-.6);
+$navbar-light-color: #000;
 $navbar-brand-font-size: $font-size-base;
 
 // Cards

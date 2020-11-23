@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light px-0" style="background-color: #ffcd00;" aria-label="Site main navigation">
+<nav class="navbar navbar-main navbar-light navbar-expand-lg p-0" aria-label="Site main navigation">
     <a class="navbar-brand " href="{$BaseUrl}" aria-label="{$SiteConfig.Title}">
         $SiteConfig.Title
     </a>
@@ -10,9 +10,9 @@
         <ul class="navbar-nav">
             <% loop $Menu(1) %>
                 <% if $URLSegment != 'home' %>
-                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %><% if Children %> dropdown<% end_if %>">
-                    <a class="nav-link" href="$Link" >$MenuTitle.XML</a>
-                </li>
+                                <li class="nav-item $LinkingMode <% if $URLSegment == "home" %>d-none d-lg-block <% end_if %><% if $isCurrent || $isSection %>nav-item-active<% end_if %>">
+                                    <a class="nav-link" href="$Link">$MenuTitle.XML</a>
+                                </li>
                 <% end_if %>
             <% end_loop %>
         </ul>
