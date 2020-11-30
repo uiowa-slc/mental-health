@@ -99,9 +99,9 @@ $spacers: (6: ($spacer * 4.5),
 9: ($spacer * 12));
 
 // Border
-$border-radius: 0;
-$border-radius-lg: 0;
-$border-radius-sm: 0;
+$border-radius: 3px;
+$border-radius-lg: 3px;
+$border-radius-sm: 3px;
 
 // Breadcrumbs
 $breadcrumb-font-size: 13px;
@@ -118,6 +118,9 @@ $breadcrumb-border-radius: $border-radius;
 // Navbar
 $navbar-light-color: #000;
 $navbar-brand-font-size: $font-size-base;
+//$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+//$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'/></svg> ");
+
 
 // Cards
 $card-border-radius: $border-radius-sm;

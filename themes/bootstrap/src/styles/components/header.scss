@@ -9,21 +9,65 @@
     .navbar-brand {
 
         font-weight: 300;
-        font-size: 35px;
+        font-size: rem-calc(22);
 
-
+        margin-right: 0;
         color: black;
 
+        @media (max-width: 375px) {
+            // max-width: 250px;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+        }
+
+        @include media-breakpoint-up(sm) {
+            font-size: rem-calc(25);
+            margin-right: 10px;
+
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: rem-calc(30);
+
+        }
+
+        @include media-breakpoint-up(xl) {
+
+            font-size: rem-calc(35);
+        }
+
+    }
+
+    .navbar-toggler-icon {
+
+        height: 25px;
+        width: 25px;
+        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'/></svg> ");
+        background-repeat: no-repeat;
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:after {
+            @media (min-width: 374px) {
+                text-transform: uppercase;
+                font-family: 'Roboto';
+                display: inline-block;
+                font-size: rem-calc(16);
+                content: 'Menu';
+            }
+        }
     }
 
     .nav-link {
 
         color: $body-color;
         font-weight: bold;
-        font-size: 18px;
+        font-size: rem-calc(18);
 
         @include media-breakpoint-up(lg) {
-            font-size: 16px;
+            font-size: rem-calc(16);
             padding: 30px 0;
         }
     }
