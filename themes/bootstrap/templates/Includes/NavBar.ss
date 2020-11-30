@@ -10,9 +10,9 @@
         <ul class="navbar-nav">
             <% loop $Menu(1) %>
                 <% if $URLSegment != 'home' %>
-                                <li class="nav-item $LinkingMode <% if $URLSegment == "home" %>d-none d-lg-block <% end_if %><% if $isCurrent || $isSection %>nav-item-active<% end_if %>">
-                                    <a class="nav-link" href="$Link">$MenuTitle.XML</a>
-                                </li>
+                <li class="nav-item $LinkingMode <% if $URLSegment == "home" %>d-none d-lg-block <% end_if %><% if $isCurrent || $isSection %>nav-item-active<% end_if %>">
+                    <a class="nav-link" href="$Link">$MenuTitle.XML</a>
+                </li>
                 <% end_if %>
             <% end_loop %>
         </ul>
