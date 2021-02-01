@@ -20,9 +20,15 @@ use SilverStripe\Forms\GridField\GridField;
         {
             $fields = parent::getCMSFields();
 
+            // Mental Health Resource Grid
             $conf = GridFieldConfig_RecordEditor::create();
             $conf->addComponent(new GridFieldSortableRows('SortOrder'));
-            $fields->addFieldToTab('Root.Resources', new GridField('Resources', 'Resources', Resource::get(), $conf));
+            $fields->addFieldToTab('Root.MentalHealthResources', new GridField('Resources', 'Resources', Resource::get(), $conf));
+
+            // Additional Resource Grid
+            $conf = GridFieldConfig_RecordEditor::create();
+            $conf->addComponent(new GridFieldSortableRows('SortOrder'));
+            $fields->addFieldToTab('Root.AdditionalSupportResources', new GridField('AdditionalResources', 'AdditionalResources', AdditionalResource::get(), $conf));
             
             return $fields;
         }
@@ -30,6 +36,11 @@ use SilverStripe\Forms\GridField\GridField;
         public function Resources(){
         	$resources = Resource::get();
         	return $resources;
+        }
+
+        public function AdditionalResources(){
+        	$additionalresources = AdditionalResource::get();
+        	return $additionalresources;
         }
     }
 }

@@ -41,5 +41,24 @@
             </div>
         </section>
     <% end_if %>
+    <% if $AdditionalResources %>
+        <div class="row">
+            <div class="col-md-12 ">
+                <hr />
+                <h2 class="py-3">Additional Resources</h2>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <% loop $AdditionalResources %>
+                        <div class="col-md-6">
+                            <% include ResourceCard %>
+                        </div>
+                    <% end_loop %>
+                </div>			
+            </div>
+        </section>
+    <% end_if %>
 </main>
 
