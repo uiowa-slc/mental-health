@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-md-12 ">
                 <hr />
-                <h2 class="py-3">Additional Resources</h2>
+                <h2 class="py-3">Additional Support Services</h2>
             </div>
         </div>
         <section class="row">
