@@ -25,7 +25,7 @@
         <div class="content-container <% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-lg-12<% end_if %>">
             <article>
 				$Content
-				<% loop $EventList %>
+				<% loop $EventList() %>
 					<% include EventCard %>
 				<% end_loop %>
 			</article>
