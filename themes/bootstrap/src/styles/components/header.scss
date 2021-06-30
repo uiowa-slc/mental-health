@@ -1,5 +1,18 @@
+
 .header {
     border-bottom: 1px solid #e6e5e5
+}
+.header .site-name {
+  font-family: $font-family-base;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 25px 20px 25px 0;
+  & a {
+    text-decoration: none;
+    color: $gray-900;
+  }
 }
 
 
@@ -7,10 +20,8 @@
 
 .navbar-main {
     .navbar-brand {
-
         font-weight: 300;
         font-size: rem-calc(22);
-
         margin-right: 0;
         color: black;
 
@@ -39,7 +50,6 @@
     }
 
     .navbar-toggler-icon {
-
         height: 25px;
         width: 25px;
         background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'/></svg> ");
@@ -48,7 +58,6 @@
 
     .navbar-toggler {
         border: none;
-
         &:after {
             @media (min-width: 374px) {
                 text-transform: uppercase;
@@ -61,14 +70,14 @@
     }
 
     .nav-link {
-
         color: $body-color;
         font-weight: bold;
         font-size: rem-calc(18);
 
         @include media-breakpoint-up(lg) {
             font-size: rem-calc(16);
-            padding: 30px 0;
+            padding-top: .75rem;
+            padding-bottom: 1.25rem;
         }
     }
 
@@ -106,4 +115,7 @@
     }
 
 
+}
+.navbar-main .nav-item-active::after {
+  background-color: $gray-200;
 }
