@@ -22,6 +22,7 @@ use SilverStripe\Forms\TreeDropdownField;
             'FeaturedPageTwo' => SiteTree::class,
             'FeaturedPageThree' => SiteTree::class,
             'FeaturedPageFour' => SiteTree::class,
+            'FeaturedPageFive' => SiteTree::class,
         );
 
         private static $icon_class = 'font-icon-p-home';
@@ -35,6 +36,7 @@ use SilverStripe\Forms\TreeDropdownField;
             $fields->addFieldToTab('Root.Main', TreeDropdownField::create('FeaturedPageTwoID', 'Link to this page', SiteTree::class), 'Content');
             $fields->addFieldToTab('Root.Main', TreeDropdownField::create('FeaturedPageThreeID', 'Link to this page', SiteTree::class), 'Content');
             $fields->addFieldToTab('Root.Main', TreeDropdownField::create('FeaturedPageFourID', 'Link to this page', SiteTree::class), 'Content');
+            $fields->addFieldToTab('Root.Main', TreeDropdownField::create('FeaturedPageFiveID', 'Link to this page', SiteTree::class), 'Content');
             
             return $fields;
         }
