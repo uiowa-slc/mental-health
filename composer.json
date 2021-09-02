@@ -50,7 +50,7 @@
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
         },
         {
-            "type": "vcs",
+            "type": "git",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools"
         },
         {

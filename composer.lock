@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fc1455c431e8fb41e7f2ffff2febe22",
+    "content-hash": "fe4c84e69f4dc4ac75c89642dab307a4",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1319,14 +1319,8 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools.git",
-                "reference": "e4b20eb33af2ca45ee0c1d81fe90a078b78e987f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-migration-tools/zipball/e4b20eb33af2ca45ee0c1d81fe90a078b78e987f",
-                "reference": "e4b20eb33af2ca45ee0c1d81fe90a078b78e987f",
-                "shasum": ""
+                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools",
+                "reference": "3033d5ee6d273462f4d2cac5ca9faa1022f96b98"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -1337,11 +1331,7 @@
             "default-branch": true,
             "type": "silverstripe-vendormodule",
             "description": "Exports SilverStripe content to WordPress eXtended RSS",
-            "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/tree/main",
-                "issues": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/issues"
-            },
-            "time": "2021-08-04T15:57:18+00:00"
+            "time": "2021-09-02T14:01:25+00:00"
         },
         {
             "name": "md/uiowa-bar",
